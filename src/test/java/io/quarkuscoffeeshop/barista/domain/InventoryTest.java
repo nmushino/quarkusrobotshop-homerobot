@@ -37,7 +37,7 @@ public class InventoryTest {
 
         Integer totalCoffee = inventory.getTotalCoffee();
         LOGGER.info("total coffee: {}", totalCoffee);
-        assertTrue(inventory.decrementItem(Item.COFFEE_WITH_ROOM));
+        assertTrue(inventory.decrementItem(Item.CP1FC3_HOME));
         Integer updatedCoffee = inventory.getTotalCoffee();
         LOGGER.info("total coffee after decrementing: {}", updatedCoffee);
         assertTrue(updatedCoffee == totalCoffee - 1);
@@ -48,8 +48,8 @@ public class InventoryTest {
 
         Integer totalCoffee = inventory.getTotalCoffee();
         for (int i = 0; i < totalCoffee; i++) {
-            assertTrue(inventory.decrementItem(Item.COFFEE_BLACK));
+            assertTrue(inventory.decrementItem(Item.CP0FB2_BLACK));
         }
-        assertFalse(inventory.decrementItem(Item.COFFEE_BLACK));
+        assertFalse(inventory.decrementItem(Item.CP0FB2_BLACK));
     }
 }

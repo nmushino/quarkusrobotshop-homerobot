@@ -66,19 +66,19 @@ public class Barista {
     private int calculateDelay(final Item item) {
         int delay;
         switch (item) {
-            case COFFEE_BLACK:
+            case CP0FB2_BLACK:
                 delay = 5000;
                 break;
-            case COFFEE_WITH_ROOM:
+            case CP1FC3_HOME:
                 delay = 5000;
                 break;
-            case ESPRESSO:
+            case CK9FA3:
                 delay = 7000;
                 break;
-            case ESPRESSO_DOUBLE:
+            case CS92C3:
                 delay = 7000;
                 break;
-            case CAPPUCCINO:
+            case CH99A9:
                 delay = 10000;
                 break;
             default:

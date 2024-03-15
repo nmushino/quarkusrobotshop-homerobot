@@ -12,7 +12,7 @@ public class TestUtil {
         return new OrderIn(
                 UUID.randomUUID().toString(),
                 UUID.randomUUID().toString(),
-                Item.COFFEE_BLACK,
+                Item.CP0FB2_BLACK,
                 "Lemmy"
         );
     }

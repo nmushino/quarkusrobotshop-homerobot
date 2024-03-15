@@ -29,7 +29,7 @@ public class BaristaTest {
 
     @BeforeEach
     public void restock() {
-        barista.restockItem(Item.COFFEE_BLACK);
+        barista.restockItem(Item.CP0FB2_BLACK);
     }
 
     @Test

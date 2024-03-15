@@ -22,7 +22,7 @@ public class Inventory {
     }
 
     /*
-        COFFEE_BLACK and COFFEE_WITH_ROOM are simply tracked as COFFEE_BLACK
+        CP0FB2_BLACK and CP1FC3_HOME are simply tracked as CP0FB2_BLACK
      */
     @PostConstruct
     private void createStock() {
@@ -35,17 +35,17 @@ public class Inventory {
         });
 
         // Account for coffee
-        Integer totalCoffee = stock.get(Item.COFFEE_BLACK).intValue() + stock.get(Item.COFFEE_WITH_ROOM).intValue();
-        stock.remove(Item.COFFEE_BLACK);
-        stock.remove(Item.COFFEE_WITH_ROOM);
-        stock.put(Item.COFFEE_BLACK, totalCoffee);
+        Integer totalCoffee = stock.get(Item.CP0FB2_BLACK).intValue() + stock.get(Item.CP1FC3_HOME).intValue();
+        stock.remove(Item.CP0FB2_BLACK);
+        stock.remove(Item.CP1FC3_HOME);
+        stock.put(Item.CP0FB2_BLACK, totalCoffee);
     }
 
     public boolean decrementItem(Item item) {
 
         LOGGER.debug("decrementing {}", item);
 
-        if (item == Item.COFFEE_WITH_ROOM) item = Item.COFFEE_BLACK;
+        if (item == Item.CP1FC3_HOME) item = Item.CP0FB2_BLACK;
 
         Integer itemCount = stock.get(item);
         LOGGER.debug("current inventory for {} is {}", item, itemCount);
@@ -63,7 +63,7 @@ public class Inventory {
     }
 
     public Integer getTotalCoffee() {
-        return stock.get(Item.COFFEE_BLACK);
+        return stock.get(Item.CP0FB2_BLACK);
     }
 
     public void restock(Item item) {
