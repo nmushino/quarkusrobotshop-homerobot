@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.barista.domain;
+package io.quarkuscoffeeshop.homerobot.domain;
 
 import io.quarkus.runtime.Quarkus;
 import io.quarkus.runtime.annotations.QuarkusMain;

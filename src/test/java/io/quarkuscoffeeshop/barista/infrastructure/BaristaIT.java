@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.barista.infrastructure;
+package io.quarkuscoffeeshop.homerobot.infrastructure;
 
 import io.quarkuscoffeeshop.domain.*;
 import io.quarkuscoffeeshop.infrastructure.KafkaIT;
@@ -26,17 +26,17 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @QuarkusTest
 @QuarkusTestResource(KafkaTestResource.class)
-public class BaristaIT extends KafkaIT {
+public class HomerobotIT extends KafkaIT {
 
     Jsonb jsonb = JsonbBuilder.create();
 
-    public BaristaIT() {
+    public HomerobotIT() {
     }
 
     @Test
     public void testOrderIn() {
         OrderInEvent orderIn = new OrderInEvent(EventType.BEVERAGE_ORDER_IN, UUID.randomUUID().toString(), UUID.randomUUID().toString(), "Lemmy", Item.CP0FB2_BLACK);
-        producerMap.get("barista-in").send(new ProducerRecord<>("barista-in", jsonb.toJson(orderIn)));
+        producerMap.get("homerobot-in").send(new ProducerRecord<>("homerobot-in", jsonb.toJson(orderIn)));
 
         try {
             Thread.sleep(6000);
@@ -45,11 +45,11 @@ public class BaristaIT extends KafkaIT {
         }
 
         // Get the appropriate consumer, point to the first message, and pull all messages
-        final KafkaConsumer baristaConsumer = consumerMap.get("orders");
-        baristaConsumer.seekToBeginning(new ArrayList<TopicPartition>());
-        final ConsumerRecords<String, String> baristaRecords = baristaConsumer.poll(Duration.ofMillis(1000));
+        final KafkaConsumer homerobotConsumer = consumerMap.get("orders");
+        homerobotConsumer.seekToBeginning(new ArrayList<TopicPartition>());
+        final ConsumerRecords<String, String> homerobotRecords = homerobotConsumer.poll(Duration.ofMillis(1000));
 
-        for (ConsumerRecord<String, String> record : baristaRecords) {
+        for (ConsumerRecord<String, String> record : homerobotRecords) {
             System.out.println(record.value());
             //[{"item":"CP0FB2_BLACK","itemId":"901f1fb5-7ebf-4d2d-b0cd-0a80fa5a91e2","name":"Lemmy","orderId":"8a44cc4c-df49-4180-b0c5-c4ef34def5be","eventType":"BEVERAGE_ORDER_UP","madeBy":"jedavis-mac"}]
             System.out.println(record.value());

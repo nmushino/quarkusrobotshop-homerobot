@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.barista.infrastructure;
+package io.quarkuscoffeeshop.homerobot.infrastructure;
 
 import java.util.Collections;
 import java.util.HashMap;

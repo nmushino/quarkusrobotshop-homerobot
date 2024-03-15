@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.quarkuscoffeeshop</groupId>
-  <artifactId>quarkuscoffeeshop-barista</artifactId>
+  <artifactId>quarkuscoffeeshop-homerobot</artifactId>
   <version>6.1.0</version>
 
   <properties>

@@ -1,7 +1,7 @@
-package io.quarkuscoffeeshop.barista.infrastructure;
+package io.quarkuscoffeeshop.homerobot.infrastructure;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkuscoffeeshop.barista.domain.Barista;
+import io.quarkuscoffeeshop.homerobot.domain.Homerobot;
 import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
 import io.quarkuscoffeeshop.domain.valueobjects.OrderUp;
 import org.eclipse.microprofile.reactive.messaging.Channel;
@@ -21,7 +21,7 @@ public class KafkaService {
     Logger logger = LoggerFactory.getLogger(KafkaService.class);
 
     @Inject
-    Barista barista;
+    Homerobot homerobot;
 
     @Inject
     //@Channel("orders-out")
@@ -39,16 +39,16 @@ public class KafkaService {
 
         return CompletableFuture.supplyAsync(() -> {
 
-            return barista.make(orderIn);
-        }).thenApply(baristaResult -> {
+            return homerobot.make(orderIn);
+        }).thenApply(homerobotResult -> {
 
-            if (baristaResult.isEightySixed()) {
+            if (homerobotResult.isEightySixed()) {
 
                 eightySixEmitter.send(orderIn.getItem().toString());
             }else{
 
-                logger.debug( "OrderUp: {}", baristaResult.getOrderUp());
-                orderUpEmitter.send(baristaResult.getOrderUp());
+                logger.debug( "OrderUp: {}", homerobotResult.getOrderUp());
+                orderUpEmitter.send(homerobotResult.getOrderUp());
             }
 
             return null;

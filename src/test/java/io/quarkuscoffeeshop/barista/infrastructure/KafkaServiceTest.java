@@ -1,9 +1,9 @@
-package io.quarkuscoffeeshop.barista.infrastructure;
+package io.quarkuscoffeeshop.homerobot.infrastructure;
 
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.mockito.InjectSpy;
-import io.quarkuscoffeeshop.barista.TestUtil;
+import io.quarkuscoffeeshop.homerobot.TestUtil;
 import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
 import io.quarkuscoffeeshop.domain.valueobjects.OrderUp;
 import io.smallrye.reactive.messaging.connectors.InMemoryConnector;

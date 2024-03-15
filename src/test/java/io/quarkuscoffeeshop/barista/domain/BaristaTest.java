@@ -1,9 +1,9 @@
-package io.quarkuscoffeeshop.barista.domain;
+package io.quarkuscoffeeshop.homerobot.domain;
 
-import io.quarkuscoffeeshop.barista.TestUtil;
+import io.quarkuscoffeeshop.homerobot.TestUtil;
 import io.quarkuscoffeeshop.domain.*;
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkuscoffeeshop.domain.valueobjects.BaristaResult;
+import io.quarkuscoffeeshop.domain.valueobjects.HomerobotResult;
 import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
 import io.quarkuscoffeeshop.domain.valueobjects.OrderUp;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,16 +20,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @QuarkusTest
-public class BaristaTest {
+public class HomerobotTest {
 
     @Inject
-    Barista barista;
+    Homerobot homerobot;
 
     Jsonb jsonb = JsonbBuilder.create();
 
     @BeforeEach
     public void restock() {
-        barista.restockItem(Item.CP0FB2_BLACK);
+        homerobot.restockItem(Item.CP0FB2_BLACK);
     }
 
     @Test
@@ -37,9 +37,9 @@ public class BaristaTest {
 
         OrderIn orderIn = TestUtil.getOrderTicket();
 
-        BaristaResult baristaResult = barista.make(orderIn);
+        HomerobotResult homerobotResult = homerobot.make(orderIn);
 
-        OrderUp orderUp = baristaResult.getOrderUp();
+        OrderUp orderUp = homerobotResult.getOrderUp();
 
         await().atLeast(Duration.ofSeconds(5000));
 

@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.barista;
+package io.quarkuscoffeeshop.homerobot;
 
 import io.quarkuscoffeeshop.domain.Item;
 import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;

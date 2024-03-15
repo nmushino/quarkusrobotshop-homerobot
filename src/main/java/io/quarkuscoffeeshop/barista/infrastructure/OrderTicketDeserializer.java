@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.barista.infrastructure;
+package io.quarkuscoffeeshop.homerobot.infrastructure;
 
 import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;
 import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;

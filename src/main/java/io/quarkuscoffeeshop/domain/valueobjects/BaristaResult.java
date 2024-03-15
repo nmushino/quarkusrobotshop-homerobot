@@ -1,8 +1,8 @@
 package io.quarkuscoffeeshop.domain.valueobjects;
 
-import io.quarkuscoffeeshop.barista.domain.EightySixEvent;
+import io.quarkuscoffeeshop.homerobot.domain.EightySixEvent;
 
-public class BaristaResult {
+public class HomerobotResult {
 
     private OrderUp orderUp;
 
@@ -10,11 +10,11 @@ public class BaristaResult {
 
     private boolean isEightySixed;
 
-    public BaristaResult(OrderUp orderUp) {
+    public HomerobotResult(OrderUp orderUp) {
         this.orderUp = orderUp;
     }
 
-    public BaristaResult(EightySixEvent eightySixEvent) {
+    public HomerobotResult(EightySixEvent eightySixEvent) {
         this.eightySixEvent = eightySixEvent;
         this.isEightySixed = true;
     }

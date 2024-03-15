@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.barista.domain;
+package io.quarkuscoffeeshop.homerobot.domain;
 
 import io.quarkuscoffeeshop.domain.*;
 import io.quarkus.test.junit.QuarkusTest;

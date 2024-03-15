@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.barista.domain;
+package io.quarkuscoffeeshop.homerobot.domain;
 
 import io.quarkuscoffeeshop.domain.Item;
 import org.slf4j.Logger;
