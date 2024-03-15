@@ -1,9 +1,9 @@
-package io.quarkuscoffeeshop.homerobot.domain;
+package io.quarkusrobotshop.homerobot.domain;
 
-import io.quarkuscoffeeshop.domain.Item;
-import io.quarkuscoffeeshop.domain.valueobjects.HomerobotResult;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderUp;
+import io.quarkusrobotshop.domain.Item;
+import io.quarkusrobotshop.domain.valueobjects.HomerobotResult;
+import io.quarkusrobotshop.domain.valueobjects.OrderIn;
+import io.quarkusrobotshop.domain.valueobjects.OrderUp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,10 +1,10 @@
-package io.quarkuscoffeeshop.homerobot.infrastructure;
+package io.quarkusrobotshop.homerobot.infrastructure;
 
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkuscoffeeshop.homerobot.TestUtil;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderUp;
+import io.quarkusrobotshop.homerobot.TestUtil;
+import io.quarkusrobotshop.domain.valueobjects.OrderIn;
+import io.quarkusrobotshop.domain.valueobjects.OrderUp;
 import io.smallrye.reactive.messaging.connectors.InMemoryConnector;
 import io.smallrye.reactive.messaging.connectors.InMemorySink;
 import io.smallrye.reactive.messaging.connectors.InMemorySource;

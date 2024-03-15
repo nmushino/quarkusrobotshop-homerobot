@@ -1,7 +1,7 @@
-package io.quarkuscoffeeshop.homerobot.domain;
+package io.quarkusrobotshop.homerobot.domain;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkuscoffeeshop.domain.Item;
+import io.quarkusrobotshop.domain.Item;
 
 @RegisterForReflection
 public class EightySixEvent implements Event {

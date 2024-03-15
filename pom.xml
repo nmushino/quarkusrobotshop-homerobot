@@ -2,8 +2,8 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.quarkuscoffeeshop</groupId>
-  <artifactId>quarkuscoffeeshop-homerobot</artifactId>
+  <groupId>io.quarkusrobotshop</groupId>
+  <artifactId>quarkusrobotshop-homerobot</artifactId>
   <version>6.1.0</version>
 
   <properties>
@@ -24,7 +24,7 @@
     <failsafe-plugin.version>3.0.0-M4</failsafe-plugin.version>
     <testcontainers.version>1.15.0-rc2</testcontainers.version>
     <kafka-clients.version>2.8.2</kafka-clients.version>
-    <coffeeshop-testutils.version>4.0.0</coffeeshop-testutils.version>
+    <robotshop-testutils.version>4.0.0</robotshop-testutils.version>
   </properties>
 
   <dependencyManagement>
@@ -38,9 +38,9 @@
       </dependency>
       <!-- Application Testing -->
       <dependency>
-        <groupId>io.quarkuscoffeeshop</groupId>
-        <artifactId>quarkuscoffeeshop-testutils</artifactId>
-        <version>${coffeeshop-testutils.version}</version>
+        <groupId>io.quarkusrobotshop</groupId>
+        <artifactId>quarkusrobotshop-testutils</artifactId>
+        <version>${robotshop-testutils.version}</version>
       </dependency>
       <!-- Testing -->
       <dependency>
@@ -101,8 +101,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkuscoffeeshop</groupId>
-      <artifactId>quarkuscoffeeshop-testutils</artifactId>
+      <groupId>io.quarkusrobotshop</groupId>
+      <artifactId>quarkusrobotshop-testutils</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

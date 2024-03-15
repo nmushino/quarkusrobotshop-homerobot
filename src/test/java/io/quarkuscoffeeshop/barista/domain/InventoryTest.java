@@ -1,6 +1,6 @@
-package io.quarkuscoffeeshop.homerobot.domain;
+package io.quarkusrobotshop.homerobot.domain;
 
-import io.quarkuscoffeeshop.domain.*;
+import io.quarkusrobotshop.domain.*;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -36,10 +36,10 @@ public class InventoryTest {
     public void testDecrementCoffee() {
 
         Integer totalCoffee = inventory.getTotalCoffee();
-        LOGGER.info("total coffee: {}", totalCoffee);
+        LOGGER.info("total robot: {}", totalCoffee);
         assertTrue(inventory.decrementItem(Item.CP1FC3_HOME));
         Integer updatedCoffee = inventory.getTotalCoffee();
-        LOGGER.info("total coffee after decrementing: {}", updatedCoffee);
+        LOGGER.info("total robot after decrementing: {}", updatedCoffee);
         assertTrue(updatedCoffee == totalCoffee - 1);
     }
 

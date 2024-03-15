@@ -1,11 +1,11 @@
-package io.quarkuscoffeeshop.homerobot.domain;
+package io.quarkusrobotshop.homerobot.domain;
 
-import io.quarkuscoffeeshop.homerobot.TestUtil;
-import io.quarkuscoffeeshop.domain.*;
+import io.quarkusrobotshop.homerobot.TestUtil;
+import io.quarkusrobotshop.domain.*;
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkuscoffeeshop.domain.valueobjects.HomerobotResult;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderUp;
+import io.quarkusrobotshop.domain.valueobjects.HomerobotResult;
+import io.quarkusrobotshop.domain.valueobjects.OrderIn;
+import io.quarkusrobotshop.domain.valueobjects.OrderUp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

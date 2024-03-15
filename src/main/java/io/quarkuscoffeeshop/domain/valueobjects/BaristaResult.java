@@ -1,6 +1,6 @@
-package io.quarkuscoffeeshop.domain.valueobjects;
+package io.quarkusrobotshop.domain.valueobjects;
 
-import io.quarkuscoffeeshop.homerobot.domain.EightySixEvent;
+import io.quarkusrobotshop.homerobot.domain.EightySixEvent;
 
 public class HomerobotResult {
 

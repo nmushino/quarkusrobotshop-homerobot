@@ -1,6 +1,6 @@
-package io.quarkuscoffeeshop.homerobot.domain;
+package io.quarkusrobotshop.homerobot.domain;
 
-import io.quarkuscoffeeshop.domain.Item;
+import io.quarkusrobotshop.domain.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,7 +34,7 @@ public class Inventory {
             LOGGER.debug(entrySet.getKey() + " " + entrySet.getValue());
         });
 
-        // Account for coffee
+        // Account for robot
         Integer totalCoffee = stock.get(Item.CP0FB2_BLACK).intValue() + stock.get(Item.CP1FC3_HOME).intValue();
         stock.remove(Item.CP0FB2_BLACK);
         stock.remove(Item.CP1FC3_HOME);

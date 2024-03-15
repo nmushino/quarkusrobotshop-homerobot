@@ -1,7 +1,7 @@
-package io.quarkuscoffeeshop.homerobot.infrastructure;
+package io.quarkusrobotshop.homerobot.infrastructure;
 
 import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
+import io.quarkusrobotshop.domain.valueobjects.OrderIn;
 
 public class OrderTicketDeserializer extends ObjectMapperDeserializer<OrderIn> {
 

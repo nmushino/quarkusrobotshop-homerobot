@@ -1,6 +1,6 @@
-package io.quarkuscoffeeshop.homerobot.domain;
+package io.quarkusrobotshop.homerobot.domain;
 
-import io.quarkuscoffeeshop.domain.Item;
+import io.quarkusrobotshop.domain.Item;
 
 import java.util.Arrays;
 import java.util.Collection;

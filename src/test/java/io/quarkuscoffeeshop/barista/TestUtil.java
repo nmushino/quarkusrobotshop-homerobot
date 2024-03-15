@@ -1,7 +1,7 @@
-package io.quarkuscoffeeshop.homerobot;
+package io.quarkusrobotshop.homerobot;
 
-import io.quarkuscoffeeshop.domain.Item;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
+import io.quarkusrobotshop.domain.Item;
+import io.quarkusrobotshop.domain.valueobjects.OrderIn;
 
 import java.util.UUID;
 

@@ -1,9 +1,9 @@
-package io.quarkuscoffeeshop.homerobot.infrastructure;
+package io.quarkusrobotshop.homerobot.infrastructure;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkuscoffeeshop.homerobot.domain.Homerobot;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderIn;
-import io.quarkuscoffeeshop.domain.valueobjects.OrderUp;
+import io.quarkusrobotshop.homerobot.domain.Homerobot;
+import io.quarkusrobotshop.domain.valueobjects.OrderIn;
+import io.quarkusrobotshop.domain.valueobjects.OrderUp;
 import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
