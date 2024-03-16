@@ -1,5 +1,6 @@
 package io.quarkusrobotshop.homerobot.domain;
 
+import io.quarkusrobotshop.homerobot.domain.Inventory;
 import io.quarkusrobotshop.domain.*;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.MethodOrderer;

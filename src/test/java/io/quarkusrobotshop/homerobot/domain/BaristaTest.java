@@ -1,6 +1,7 @@
 package io.quarkusrobotshop.homerobot.domain;
 
 import io.quarkusrobotshop.homerobot.TestUtil;
+import io.quarkusrobotshop.homerobot.domain.Homerobot;
 import io.quarkusrobotshop.domain.*;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkusrobotshop.domain.valueobjects.HomerobotResult;

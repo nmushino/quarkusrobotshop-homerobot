@@ -26,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @QuarkusTest
 @QuarkusTestResource(KafkaTestResource.class)
-public class HomerobotIT extends KafkaIT {
+public class HomerobotIT {
 
     Jsonb jsonb = JsonbBuilder.create();
 
