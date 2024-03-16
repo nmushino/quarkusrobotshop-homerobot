@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.smallrye.reactive.messaging.connectors.InMemoryConnector;
-import org.testcontainers.containers.KafkaContainer;
+//import org.testcontainers.containers.KafkaContainer;
 
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;
 

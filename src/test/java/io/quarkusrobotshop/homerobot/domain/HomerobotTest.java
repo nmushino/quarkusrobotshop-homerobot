@@ -11,8 +11,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
-import javax.json.bind.Jsonb;
-import javax.json.bind.JsonbBuilder;
+//import javax.json.bind.Jsonb;
+//import javax.json.bind.JsonbBuilder;
 import java.time.Duration;
 import java.util.concurrent.ExecutionException;
 
@@ -26,7 +26,7 @@ public class HomerobotTest {
     @Inject
     Homerobot homerobot;
 
-    Jsonb jsonb = JsonbBuilder.create();
+    //Jsonb jsonb = JsonbBuilder.create();
 
     @BeforeEach
     public void restock() {
