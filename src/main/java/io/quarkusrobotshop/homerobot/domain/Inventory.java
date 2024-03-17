@@ -35,10 +35,10 @@ public class Inventory {
         });
 
         // Account for robot
-        Integer totalCoffee = stock.get(Item.CP0FB2_BLACK).intValue() + stock.get(Item.CP1FC3_HOME).intValue();
+        Integer totalrobot = stock.get(Item.CP0FB2_BLACK).intValue() + stock.get(Item.CP1FC3_HOME).intValue();
         stock.remove(Item.CP0FB2_BLACK);
         stock.remove(Item.CP1FC3_HOME);
-        stock.put(Item.CP0FB2_BLACK, totalCoffee);
+        stock.put(Item.CP0FB2_BLACK, totalrobot);
     }
 
     public boolean decrementItem(Item item) {
@@ -62,7 +62,7 @@ public class Inventory {
         return stock;
     }
 
-    public Integer getTotalCoffee() {
+    public Integer getTotalrobot() {
         return stock.get(Item.CP0FB2_BLACK);
     }
 

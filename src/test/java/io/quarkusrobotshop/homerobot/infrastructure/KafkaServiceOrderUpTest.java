@@ -51,7 +51,7 @@ public class KafkaServiceOrderUpTest {
     }
 
     @Test
-    public void testSingleBlackCoffee() {
+    public void testSingleBlackrobot() {
 
         OrderIn orderIn = TestUtil.getOrderTicket();
         ordersIn.send(orderIn);

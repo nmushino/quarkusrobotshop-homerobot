@@ -34,7 +34,7 @@ public class HomerobotTest {
     }
 
     @Test
-    public void testBlackCoffeeOrder() throws ExecutionException, InterruptedException {
+    public void testBlackrobotOrder() throws ExecutionException, InterruptedException {
 
         OrderIn orderIn = TestUtil.getOrderTicket();
 

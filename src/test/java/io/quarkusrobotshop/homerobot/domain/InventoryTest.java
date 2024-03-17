@@ -34,21 +34,21 @@ public class InventoryTest {
     }
 
     @Test @Order(2)
-    public void testDecrementCoffee() {
+    public void testDecrementrobot() {
 
-        Integer totalCoffee = inventory.getTotalCoffee();
-        LOGGER.info("total robot: {}", totalCoffee);
+        Integer totalrobot = inventory.getTotalrobot();
+        LOGGER.info("total robot: {}", totalrobot);
         //assertTrue(inventory.decrementItem(Item.CP1FC3_HOME));
-        Integer updatedCoffee = inventory.getTotalCoffee();
-        LOGGER.info("total robot after decrementing: {}", updatedCoffee);
-        //assertTrue(updatedCoffee == totalCoffee - 1);
+        Integer updatedrobot = inventory.getTotalrobot();
+        LOGGER.info("total robot after decrementing: {}", updatedrobot);
+        //assertTrue(updatedrobot == totalrobot - 1);
     }
 
     @Test @Order(3)
-    public void testEightySixCoffee() {
+    public void testEightySixrobot() {
 
-        Integer totalCoffee = inventory.getTotalCoffee();
-        for (int i = 0; i < totalCoffee; i++) {
+        Integer totalrobot = inventory.getTotalrobot();
+        for (int i = 0; i < totalrobot; i++) {
             //assertTrue(inventory.decrementItem(Item.CP0FB2_BLACK));
         }
         //assertFalse(inventory.decrementItem(Item.CP0FB2_BLACK));
