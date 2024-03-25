@@ -24,7 +24,6 @@ public class KafkaService {
     Homerobot homerobot;
 
     @Inject
-    //@Channel("orders-out")
     @Channel("orders-up")
     Emitter<OrderUp> orderUpEmitter;
 

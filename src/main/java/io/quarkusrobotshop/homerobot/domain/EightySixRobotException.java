@@ -5,7 +5,7 @@ import io.quarkusrobotshop.domain.Item;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class EightySixrobotException extends Exception {
+public class EightySixRobotException extends Exception {
 
     public Collection<EightySixEvent> getEvents() {
         return Arrays.asList(new EightySixEvent(Item.CP0FB2_BLACK), new EightySixEvent(Item.CP1FC3_HOME));
